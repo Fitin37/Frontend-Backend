@@ -19,7 +19,7 @@ const ListEmpleado = () => {
 
   const fetchEmpleados = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/api/empleadoRoutes');
+      const response = await axios.get('https://frontend-backend-vjnx.onrender.com/api/empleadoRoutes');
       setEmpleado(response.data);
     } catch (error) {
       console.error('Error al obtener los empleados:', error);
